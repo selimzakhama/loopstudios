@@ -64,29 +64,29 @@
     <section id="mobile-hero" class="hidden p-12 bg-black">
         <!-- BTN -->
         <div class="flex justify-end">
-            <i class="fa-solid fa-x text-white text-5xl cursor-pointer" onclick="close_view()"></i>
+            <i class="fa-solid fa-x text-white text-4xl mt-3 cursor-pointer hover:text-pink-400" onclick="switch_view()"></i>
         </div>
         <!-- Menu -->
-        <div class="font-alata space-y-8 text-white pl-24 my-24 text-xl">
-            <div class="group max-w-20">
-                <a href="#">About</a>
-                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+        <div class="font-alata space-y-8 text-white pl-24 my-24 text-xl uppercase tracking-widest">
+            <div class="group max-w-44">
+                <a href="#" class="group-hover:text-pink-400">About</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-pink-500"></div>
             </div>
-            <div class="group max-w-20">
-                <a href="#">Careers</a>
-                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            <div class="group max-w-44">
+                <a href="#" class="group-hover:text-pink-400">Careers</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-pink-500"></div>
             </div>
-            <div class="group max-w-20">
-                <a href="#">Events</a>
-                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            <div class="group max-w-44">
+                <a href="#" class="group-hover:text-pink-400">Events</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-pink-500"></div>
             </div>
-            <div class="group max-w-20">
-                <a href="#">Product</a>
-                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            <div class="group max-w-44">
+                <a href="#" class="group-hover:text-pink-400">Product</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-pink-500"></div>
             </div>
-            <div class="group max-w-20">
-                <a href="#">Support</a>
-                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            <div class="group max-w-44">
+                <a href="#" class="group-hover:text-pink-400">Support</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-pink-500"></div>
             </div>
         </div>
     </section>
@@ -228,19 +228,9 @@
 <script>
     function switch_view(){
         var hero = document.querySelector('#hero');
-        hero.classList.add('hidden');
-
         var mobile_hero = document.querySelector('#mobile-hero');
-        mobile_hero.classList.remove('hidden');
-
-    }
-
-    function close_view(){
-        var hero = document.querySelector('#hero');
-        var mobile_hero = document.querySelector('#mobile-hero');
-
-        mobile_hero.classList.add('hidden');
-        hero.classList.remove('hidden');
+        mobile_hero.classList.toggle('hidden');
+        hero.classList.toggle('hidden');
     }
 </script>
 </html>
