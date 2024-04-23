@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply px-10 py-2 my-0 border-2 border-black font-bold font-alata hover:bg-black hover:text-white tracking-widest 
+    }
+}
+
+#hero{
+    background-image: url('../images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:576px){
+    
+    #hero{
+        background-image: url('../images/cover.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.item-container{
+    @apply absolute bottom-0 right-0 left-0 flex items-center px-6 h-32 group-hover:bg-black group-hover:bg-opacity-70 duration-500
+}
+
+.item{
+    @apply text-5xl text-white font-medium group-hover:text-black max-w-xs duration-500 uppercase
+}
+

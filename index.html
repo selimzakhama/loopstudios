@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Hero Container -->
+        <div class="md:container mx-auto px-10 py-12 md:px-0">
+            <!-- Menu/Logo Container -->
+            <nav class="flex items-center justify-between font-bold text-white">
+                <!-- logo -->
+                <!-- <img src="./images/logo.jpg" alt="" class="rounded-md h-24 w-48"> -->
+                <h1 class="font-bold text-5xl text-white font-alata">loopstudios</h1>
+                
+                <!-- menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                    <div class="group">
+                        <a href="#">About</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Careers</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Events</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Product</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Support</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                </div>
+
+                <!-- to do - mobile menu (hamburger) -->
+                
+                <div class="md:hidden">
+                    <i class="fa-solid fa-list text-5xl cursor-pointer" onclick="switch_view()"></i>
+                </div>
+            </nav>
+
+
+            <div class="max-w-md my-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl md:max-w-lg">
+                Impressive Experiences That Deliver
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Hero Section -->
+    <section id="mobile-hero" class="hidden p-12 bg-black">
+        <!-- BTN -->
+        <div class="flex justify-end">
+            <i class="fa-solid fa-x text-white text-5xl cursor-pointer" onclick="close_view()"></i>
+        </div>
+        <!-- Menu -->
+        <div class="font-alata space-y-8 text-white pl-24 my-24 text-xl">
+            <div class="group max-w-20">
+                <a href="#">About</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <div class="group max-w-20">
+                <a href="#">Careers</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <div class="group max-w-20">
+                <a href="#">Events</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <div class="group max-w-20">
+                <a href="#">Product</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <div class="group max-w-20">
+                <a href="#">Support</a>
+                <div class="mx-2 mt-1 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Feature Section -->
+    <section id="feature">
+        <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0 md:mb-32 min-h-[600px]">
+            <img src="./images/img1.jpg" alt="" class="h-96">
+
+            <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20 md:max-w-3xl">
+                <h2 class="max-w-lg mx-auto mt-10 mb-6 text-4xl font-sans text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">THE LEADER IN INTERACTIVE VR</h2>
+                <p class="text-left text-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugit nemo commodi provident harum, exercitationem possimus reprehenderit soluta totam, quidem ducimus natus dolorem illum quisquam voluptates, illo maxime. Voluptas consequuntur optio tenetur eligendi laboriosam iste soluta asperiores quod saepe harum.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Creation Section -->
+    <section id="creations">
+        <div class="md:container max-w-8xl mx-auto px-6 md:px-0 my-32 text-gray-900">
+
+            <div class="flex justify-center md:justify-between mb-20">
+                <h2 class="font-sans text-4xl uppercase text center md:text-left md:text-5xl">OUR CREATIONS</h2>
+                <button class="hidden md:block btn">SEE ALL</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="relative group">
+                    <img src="./images/messi.jpg" alt="" class="h-96 w-full group-hover:opacity-10 group-hover:shadow-2xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            Soccer Team Vr
+                        </p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="./images/deep-earth.jpg" alt="" class="h-96 w-full group-hover:opacity-15 group-hover:shadow-xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            Deep Earth
+                        </p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="./images/fr.jpg" alt="" class="h-96 w-full group-hover:opacity-15 group-hover:shadow-xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            from up above vr
+                        </p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="./images/night-arcade.jpg" alt="" class="h-96 w-full group-hover:opacity-15 group-hover:shadow-xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            Night arcade
+                        </p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="./images/the-curiosity.jpg" alt="" class="h-96 w-full group-hover:opacity-15 group-hover:shadow-xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            The curiosity
+                        </p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="./images/the-grid.jpg" alt="" class="h-96 w-full group-hover:opacity-15 group-hover:shadow-xl " >
+                    <div class="item-container">
+                        <p class="item">
+                            The grid
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="md:hidden btn mt-10 w-full">SEE ALL</button>
+
+
+        </div>
+    </section>
+
+
+    <!-- Section Footer -->
+    <footer>
+        <!-- footer container -->
+        <div class="mt-32 py-6 bg-black flex flex-col md:flex-row items-center justify-between text-white space-y-6 md:space-y-0 lg:px-6">
+            <h3 class="text-5xl font-sans">loopstudios</h3>
+
+            <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 space-x-0 md:space-x-4">
+                <div class="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">
+                    <div class="group">
+                        <a href="#">About</a>
+                        <div class="group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Careers</a>
+                        <div class="group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">
+                    <div class="group">
+                        <a href="#">Events</a>
+                        <div class="group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Products</a>
+                        <div class="group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                </div>
+                
+                <div class="group">
+                    <a href="">Support</a>
+                    <div class="group-hover:border-b group-hover:border-blue-50"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <div class="flex items-center space-x-4">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <p>@ 2022 Loopstudios. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- Logo -->
+        <!-- Links -->
+        <!-- Sponsors & copyright -->
+
+    </footer>
+</body>
+<script>
+    function switch_view(){
+        var hero = document.querySelector('#hero');
+        hero.classList.add('hidden');
+
+        var mobile_hero = document.querySelector('#mobile-hero');
+        mobile_hero.classList.remove('hidden');
+
+    }
+
+    function close_view(){
+        var hero = document.querySelector('#hero');
+        var mobile_hero = document.querySelector('#mobile-hero');
+
+        mobile_hero.classList.add('hidden');
+        hero.classList.remove('hidden');
+    }
+</script>
+</html>
